@@ -1,12 +1,14 @@
+
 const path=require('path')
 
-module.exports={
+module.exports=()=>{
+    return {
     entry:'./public/app_redux.js',
     output:{
         filename:'bundle.js',
         path:path.join(__dirname,'public')
     },
-    mode: 'development',
+    mode:'development',
     module: {
         rules: [{
             loader: 'babel-loader',
@@ -23,6 +25,7 @@ module.exports={
     devServer: {
         contentBase: path.join(__dirname, "public"), historyApiFallback: true
        
+        }
     }
    
 }

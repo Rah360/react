@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link } from 'react-router-dom'
 import {connect} from 'react-redux'
-import {removeExpense} from '../action/expense'
+import {removeExpense,RemoveFromDatabase} from '../action/expense'
 const ListItem = ({
            dispatch,
         id,
@@ -15,7 +15,7 @@ const ListItem = ({
         <p>{createdAt}</p>
         <button  onClick={e=>{
             
-            dispatch(removeExpense({id}))
+            dispatch(RemoveFromDatabase({id}))
         }}> remove </button>
     </div>
 )

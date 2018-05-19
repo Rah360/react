@@ -2,8 +2,8 @@ import moment from 'moment'
 export default  (state = {
  text:"",
  sortBy:"date",
- startDate:moment().startOf('month'),
-    endDate: moment().endOF('month')
+ startDate:moment(),
+    endDate: moment()
 },action)=>{
     switch(action.type)
     {

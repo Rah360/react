@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing expense list 1`] = `
+<expenseList
+  amount={195}
+  description="Gum"
+  id="1"
+  note=""
+/>
+`;
+
+exports[`testing simulation expense list 1`] = `
+<expenseList
+  amount={195}
+  description="Gum"
+  id="1"
+  note=""
+/>
+`;

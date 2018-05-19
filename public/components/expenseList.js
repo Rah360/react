@@ -6,7 +6,7 @@ import {setText} from '../action/filter'
 
 const expenseList=(props)=>(
     <div>
-        <input type="text" value={props.filter.text} onChange={(e)=>{
+        <input type="text" placeholder="search bills here!" onChange={(e)=>{
             props.dispatch(setText(e.target.value))
         }}/>
         {props.expense.map(x=>{return <ListItem key={x.id} {...x}/>})}

@@ -5,6 +5,7 @@ const DashBoardPage=(props)=>(
     <div>
         <h3>DashBoard Page</h3>
         <hr/>
+        <hr/>
         <ExpenseList/>
     </div>
 )
